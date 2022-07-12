@@ -1,0 +1,280 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>GW Extension - Options</title>
+		<style>
+			.wb { border-collapse: collapse; border: 1px #339933 solid; }
+			td { FONT-SIZE: 9pt; COLOR: #003300; FONT-FAMILY: verdana,geneva,arial cyr; }
+		</style>
+		<script type="text/javascript" src="js/options.js"></script>
+	</head>
+	<body>
+		<table border="0" cellspacing="0" cellpadding="3" class="wb" width="600" align="center">
+		<tr><td bgcolor="#d0eed0" class="wb" align="center" colspan="2"><b>Настройки</b></td></tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">Звук если синдикат в нападении</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top" width="50%">
+			<input type="checkbox" id="songboi" value="1"/>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">Вход в синдикатный бой за</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top">
+			<select id="songboi2">
+			<option value="30">30</option>
+			<option value="60">60</option>
+			<option value="90">90</option>
+			<option value="120">120</option>
+			<option value="150">150</option>
+			<option value="180">180</option>
+			<option value="0">none</option>
+			</select> сек <font style="FONT-SIZE: 7pt;"> (небольшое уведомление)</font>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">Звук о новом сообщении</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top">
+			<input type="checkbox" id="songsms" value="1"/>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">Проверять сломанные предметы</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top">
+			<input type="checkbox" id="outrem" value="1"/><font style="FONT-SIZE: 7pt;"> (На ауте проверяет наличие сломанных вещей)</font>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">Показывать бои в которой персонаж с мах.</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top">
+			<select id="naim">
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+			<option value="24">24</option>
+			<option value="25">25</option>
+			<option value="26">26</option>
+			<option value="27">22</option>
+			<option value="28">28</option>
+			<option value="29">29</option>
+			<option value="30">30</option>
+			<option value="31">31</option>
+			<option value="32">32</option>
+			<option value="33">33</option>
+			<option value="34">34</option>
+			<option value="35">35</option>
+			<option value="36">36</option>
+			<option value="37">37</option>
+			<option value="38">38</option>
+			<option value="39">39</option>
+			<option value="40">40</option>
+			<option value="41">41</option>
+			<option value="42">42</option>
+			<option value="43">43</option>
+			<option value="44">44</option>
+			<option value="45">45</option>
+			<option value="46">46</option>
+			<option value="47">47</option>
+			<option value="48">48</option>
+			<option value="49">49</option>
+			<option value="50">50</option>
+			</select>лвл<font style="FONT-SIZE: 7pt;"> (для наемника)</font>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">Показывать бои в которой персонаж с мах.</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top">
+			<select id="boevik">
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+			<option value="24">24</option>
+			<option value="25">25</option>
+			<option value="26">26</option>
+			<option value="27">22</option>
+			<option value="28">28</option>
+			<option value="29">29</option>
+			<option value="30">30</option>
+			<option value="31">31</option>
+			<option value="32">32</option>
+			<option value="33">33</option>
+			<option value="34">34</option>
+			<option value="35">35</option>
+			<option value="36">36</option>
+			<option value="37">37</option>
+			<option value="38">38</option>
+			<option value="39">39</option>
+			<option value="40">40</option>
+			<option value="41">41</option>
+			<option value="42">42</option>
+			<option value="43">43</option>
+			<option value="44">44</option>
+			<option value="45">45</option>
+			<option value="46">46</option>
+			<option value="47">47</option>
+			<option value="48">48</option>
+			<option value="49">49</option>
+			<option value="50">50</option>
+			</select>лвл<font style="FONT-SIZE: 7pt;"> (для боевика)</font>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">Показывать подсказки ботов</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top">
+			<input type="checkbox" id="outtt" value="1"/><font style="FONT-SIZE: 7pt;"> (На ауте разворачивает подсказки)</font>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">Показывать подсказки ботов без точки</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top">
+			<input type="checkbox" id="outtt2" value="1"/><font style="FONT-SIZE: 7pt;"> (На ауте разворачивает подсказки поков без точки)</font>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">Показывать подсказки флажков</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top">
+			<input type="checkbox" id="outtt3" value="1"/><font style="FONT-SIZE: 7pt;"> (На ауте разворачивает подсказки флажков)</font>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">Прозрачность подсказки</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top">
+			<select id="out_op">
+			<option value="0.4">4</option>
+			<option value="0.5">5</option>
+			<option value="0.6">6</option>
+			<option value="0.7">7</option>
+			<option value="0.8">8</option>
+			<option value="0.9">9</option>
+			<option value="1">10</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">Показывать бегунок передвижения</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top">
+			<input type="checkbox" id="movebeg" value="1"/><font style="FONT-SIZE: 7pt;"></font>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">Показывать только мой остров</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top">
+			<input type="checkbox" id="slom_land" value="1"/><font style="FONT-SIZE: 7pt;"> (Сортирует слом. недвижимость по островам)</font>
+			</td>
+		</tr>
+		<tr><td bgcolor="#d0eed0" class="wb" align="center" colspan="2"><b>Порядок меню</b></td></tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">1</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top">
+			<select id="menu1">
+			<option value="boevik">Список боев для боевика</option>
+			<option value="naim">Список боев для наемника</option>
+			<option value="sms">Входящие сообщения</option>
+			<option value="forum">Поиск по форуму</option>
+			<option value="slom">Поиск сломанной недвижимости</option>
+			<option value="options">Настройки</option>
+			<option value="about">Справка</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">2</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top">
+			<select id="menu2">
+			<option value="boevik">Список боев для боевика</option>
+			<option value="naim">Список боев для наемника</option>
+			<option value="sms">Входящие сообщения</option>
+			<option value="forum">Поиск по форуму</option>
+			<option value="slom">Поиск сломанной недвижимости</option>
+			<option value="options">Настройки</option>
+			<option value="about">Справка</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">3</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top">
+			<select id="menu3">
+			<option value="boevik">Список боев для боевика</option>
+			<option value="naim">Список боев для наемника</option>
+			<option value="sms">Входящие сообщения</option>
+			<option value="forum">Поиск по форуму</option>
+			<option value="slom">Поиск сломанной недвижимости</option>
+			<option value="options">Настройки</option>
+			<option value="about">Справка</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">4</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top">
+			<select id="menu4">
+			<option value="boevik">Список боев для боевика</option>
+			<option value="naim">Список боев для наемника</option>
+			<option value="sms">Входящие сообщения</option>
+			<option value="forum">Поиск по форуму</option>
+			<option value="slom">Поиск сломанной недвижимости</option>
+			<option value="options">Настройки</option>
+			<option value="about">Справка</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">5</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top">
+			<select id="menu5">
+			<option value="boevik">Список боев для боевика</option>
+			<option value="naim">Список боев для наемника</option>
+			<option value="sms">Входящие сообщения</option>
+			<option value="forum">Поиск по форуму</option>
+			<option value="slom">Поиск сломанной недвижимости</option>
+			<option value="options">Настройки</option>
+			<option value="about">Справка</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">6</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top">
+			<select id="menu6">
+			<option value="boevik">Список боев для боевика</option>
+			<option value="naim">Список боев для наемника</option>
+			<option value="sms">Входящие сообщения</option>
+			<option value="forum">Поиск по форуму</option>
+			<option value="slom">Поиск сломанной недвижимости</option>
+			<option value="options">Настройки</option>
+			<option value="about">Справка</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#d0eed0" class="wb" align="right">7</td>
+			<td bgcolor="#f0fff0" class="wb" valign="top">
+			<select id="menu7">
+			<option value="boevik">Список боев для боевика</option>
+			<option value="naim">Список боев для наемника</option>
+			<option value="sms">Входящие сообщения</option>
+			<option value="forum">Поиск по форуму</option>
+			<option value="slom">Поиск сломанной недвижимости</option>
+			<option value="options">Настройки</option>
+			<option value="about">Справка</option>
+			</select>
+			</td>
+		</tr>
+		</table>
+    </body>
+</html>

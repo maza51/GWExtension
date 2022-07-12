@@ -1,0 +1,111 @@
+﻿<!doctype html>
+<html>
+    <head lang="ru">
+        <title>GW Extension</title>
+		<script type="text/javascript" src="js/popup.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="js/naim.js"></script>
+		<script type="text/javascript" src="js/boevik.js"></script>
+		<script type="text/javascript" src="js/forum.js"></script>
+		<script type="text/javascript" src="js/slom.js"></script>
+		<style>
+			.gl { border: 1px #339933 solid; text-align:center; background:#f5fff5 url(icons/top-bg.gif) 0 0 repeat-x;width:420px; border-radius:5; border-spacing: 0px; }
+			a { FONT-SIZE: 9pt; COLOR: #004400; FONT-FAMILY: verdana,geneva,arial cyr; padding: 1px 0.5em; }
+			a.ww { FONT-SIZE: 10pt; COLOR: #004400; FONT-FAMILY: verdana,geneva,arial cyr; padding: 1px 0.5em; }
+			a.tt { height:18px;border-bottom: 1px solid #CCCCCC; width:120px; text-align:left; overflow: hidden; display:inline-block; text-overflow: ellipsis; background: -o-linear-gradient(top, #e2f5e2, #d4f0d4); }
+			a:hover.ww { COLOR: #007700; padding: 1px 0.5em; background: -o-linear-gradient(top, #d0eed0, #ace1af); box-shadow: 0px 0px 5px rgba(0,0,0,0.5);}
+			a:hover.tt { COLOR: #007700; padding: 1px 0.5em; background: -o-linear-gradient(top, #d0eed0, #ace1af);}
+			img:hover { box-shadow: 0px 0px 5px rgba(0,0,0,0.5); }
+			img:hover.cn { box-shadow: none; }
+			img:hover.menu_null { box-shadow: none; }
+			#theme td { border-bottom: 1px solid #CCCCCC; background: -o-linear-gradient(top, #e2f5e2, #d4f0d4); overflow: hidden; display:inline-block; text-overflow: ellipsis; }
+			#theme td:hover { border-bottom: 1px solid #CCCCCC; background: -o-linear-gradient(top, #d0eed0, #ace1af); }
+			.trr { background: -o-linear-gradient(top, #d0eed0, #ace1af); }
+			.scroll td { border-bottom: 1px solid #CCCCCC; background: -o-linear-gradient(top, #e2f5e2, #d4f0d4); }
+			.scroll td:hover { border-bottom: 1px solid #CCCCCC; background: -o-linear-gradient(top, #d0eed0, #ace1af); }
+			.scroll { width: 260px; overflow: auto; height: 140px; }
+			.ab { FONT-SIZE: 8pt; FONT-FAMILY: verdana,geneva,arial cyr; text-align:left; color:#9C9C9C; line-height: 1.1; }
+			.ab2 { FONT-SIZE: 8pt; text-align:left; color:#9C9C9C; padding: 1px 0.4em; }
+			.button { background:-o-linear-gradient(top, #ffffff, #E8E8E8); color:#808080; border: 1px #bbbbbb solid; padding: 1px 0.3em; }
+			.button:hover { background:-o-linear-gradient(top, #E8E8E8, #ffffff); color:#808080; border: 1px #bbbbbb solid; cursor: pointer; padding: 1px 0.3em; }
+			
+			
+		</style>
+	</head>
+    <body style="margin: 0px;">
+		<div>
+			<table class="gl" id="post" align="center">
+					
+					<tr><td><b id="namePers" style="color: #003300;font: normal normal 700 12px/14.4px Verdana;">...</b><br><i id="loader" onclick="test();">Помошник для ganjawars.ru..<br></i></td></tr>
+					<tr><td style="height:25px;"><a href="https://addons.opera.com/extensions/download/ganjawars-extension/" id="checkupdate" style="display:none;text-decoration:blink;color:red;font: normal normal 700 11px/11px Arial;">Есть новая версия!</a></td></tr>
+					<tr>
+					<td align="center">
+						<table height="145" align="center" border="0" cellpadding="0" cellspacing="1">
+						<tr>
+						<td id="infoleft" style="display:none;">
+							<table width="410">
+								<tr><td width="40%" align="left"><a class="ab2" href="javascript:go(4)">Лучший автор</a></td><td width="10%" class="ab">Название темы</td><td width="40%"></td></tr>
+								<tr><td align="left"><a class="ab2" href="javascript:go(5)">Худший автор</a></td><td class="ab"><input type="text" id="param1" value="" maxlength="35" size="25"/></td></tr>
+								<tr><td align="left"></td><td class="ab">Автор</td><td title="Общий игровой форум" style="color:#9C9C9C;"><input type="checkbox" id="oi" value="1"/>ои</td></tr>
+								<tr><td align="left"><a class="ab2" href="javascript:go(2)">Лучшие топы</a></td><td class="ab"><input type="text" id="param2" value="" maxlength="20" size="25"/></td><td title="Открытый Клуб" style="color:#9C9C9C;"><input type="checkbox" id="ok" value="1"/>ок</td></tr>
+								<tr><td align="left"><a class="ab2" href="javascript:go(3)">Худшие топы</a></td><td><div class="button" onclick="go(1)">Найти</div></td><td title="Креатив" style="color:#9C9C9C;"><input type="checkbox" id="kr" value="1"/>кр</td></tr>
+							</table>
+						</td>
+						<td id="info" align="center">
+							<table>
+							<td width="50" align="left">
+								<img class="cn" id="back" width="24" height="24" src="icons/back.png">
+							</td>
+							<td id="one" width="280">
+								<img align="left" style="cursor: pointer" width="70" height="70" id="img1">
+								<img align="center" style="cursor: pointer" width="70" height="70" id="img2">
+								<img align="right" style="cursor: pointer" width="70" height="70" id="img3">
+							</td>
+							<td id="two" style="display:none;" width="280">
+								<img align="left" style="cursor: pointer" width="70" height="70" id="img4">
+								<img align="center" style="cursor: pointer" width="70" height="70" id="img5">
+								<img align="right" style="cursor: pointer" width="70" height="70" id="img6">
+							</td>
+							<td id="three" style="display:none;" width="280">
+								<img align="left" style="cursor: pointer" width="70" height="70" id="img7">
+								<img title="Пусто" class="menu_null" align="center" style="opacity: 0.4;" width="70" height="70" src="icons/menu_null.jpg">
+								<img title="Пусто" class="menu_null" align="right" style="opacity: 0.4;" width="70" height="70" src="icons/menu_null.jpg">
+							</td>
+							<td width="50" align="right">
+								<img class="cn" id="next" width="24" height="24" src="icons/next.png">
+							</td>
+							</table>
+						</td>
+						</tr>
+						</table>
+					</td>
+					</tr>
+					<tr>
+					<td>
+						<table align="center" cellpadding="3" >
+						<tr class="trr"><td><b style="color: #004400;font: normal normal 700 12px/17px Arial;">Контроль руды</b></td><td><b style="color: #004400;font: normal normal 700 12px/17px Arial;">Контроль баров</b></td><td><b style="color: #004400;font: normal normal 700 12px/17px Arial;">Контроль элек.</b></td></tr>
+						<tr bgcolor="#f0fff0">
+						<td style="width:196px">
+							<a class="ww" style="text-decoration: none" href="/control/gland.html" ><b>G</b></a>
+							<a class="ww" style="text-decoration: none" href="/control/sland.html" ><b>S</b></a>
+							<a class="ww" style="text-decoration: none" href="/control/zland.html" ><b>Z</b></a>
+						</td>
+						<td style="width:196px">
+							<a class="ww" style="text-decoration: none" href="/control/glandb.html" ><b>G</b></a>
+							<a class="ww" style="text-decoration: none" href="/control/zlandb.html" ><b>Z</b></a>
+						</td>
+						<td style="width:196px">
+							<a class="ww" style="text-decoration: none" href="/control/gland.html?electro" ><b>G</b></a>
+							<a class="ww" style="text-decoration: none" href="/control/zland.html?electro" ><b>Z</b></a>
+						</td>
+						</tr>
+						<tr bgcolor="#d0eed0"><td style="padding: 1px;"></td><td style="padding: 1px;"></td><td style="padding: 1px;"></td></tr>
+						</table>
+					</td>
+					</tr>
+					
+					<tr><td align="center"><a target="_blank" href="http://www.ganjawars.ru/info.php?id=965772" style="text-decoration:none;color: #666666;font: 8pt sans-serif;">by maza511</a></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

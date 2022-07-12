@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget xmlns="http://www.w3.org/ns/widgets" version="2.9" id="https://addons.opera.com/extensions/details/ganjawars-extension/" href="https://addons.opera.com/extensions/details/ganjawars-extension/">
+  <name>GanjaWars Extension</name>
+  <icon src="icons/icon-64.png"/>
+  <preference name="first" value="0"/>
+  <feature name="opera:share-cookies" required="true"/>
+  <access origin="http://ganjawars.ru" subdomains="true"/>
+  <access origin="http://chat.ganjawars.ru"/>
+  <access origin="http://my.opera.com"/>
+  <access origin="https://addons.opera.com"/>
+  <access origin="http://vodkapower.ru"/>
+  <author href="http://www.ganjawars.ru/info.php?id=965772">maza511</author>
+  <update-description href="https://extension-updates.opera.com/api/w3c-wd1/update/9c8dd1cb-17f0-4326-9a27-066dce49b8e4/"/>
+  <license href="https://addons.opera.com/developer/license/hosting/">Copyright 2012 maza51. All rights reserved.</license>
+  <description xml:lang="ru">Набор функций для игры ganjawars.ru</description>
+</widget>

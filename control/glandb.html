@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+    <head lang="ru">
+        <title>GW Extension</title>
+		<style>
+			.sec{ border-collapse: collapse; border: 1px #336633 dashed; text-align:center; width:59px; height:59px; font: 0pt sans-serif; }
+			.sec:hover{ border-collapse: collapse; border: 1px #336633 dashed; text-align:center; width:59px; height:59px; font: 0pt sans-serif; background: -o-linear-gradient(top, rgba(162, 210, 255, 0.3), rgba(162, 210, 255, 0.6), rgba(162, 210, 235, 0.3)); }
+			.map { border-collapse: collapse; border: 1px #339933 solid; width:420px; height:420px; background-image:url(icons/map0.png); }
+		</style>
+	</head>
+    <body style="margin: 0px; width:430px; height:445px;">
+	<div id="preload" align="center""><table align="center"><tr><td height="400" id="info"><img src="icons/44.gif"></td></tr></table></div>
+	<div id="loadmap" class="info" style="display:none">
+		<table class="map" align="center">
+			<tr>
+				<td class="sec" id="sx=47&sy=47" title="[G] West Village"></td>
+				<td class="sec" id="sx=48&sy=47" title="[G] Greenwitch Village"></td>
+				<td class="sec" id="sx=49&sy=47" title="[G] Xenon sector"></td>
+				<td class="sec" id="sx=50&sy=47" title="[G] Seaside walleys"></td>
+				<td class="sec" id="sx=51&sy=47" title="[G] Spaceweed Drift"></td>
+				<td class="sec" id="sx=52&sy=47" title="[G] Freestylers"></td>
+				<td class="sec" id="sx=53&sy=47" title="[G] Killerloop hills"></td>
+			</tr>
+			<tr>
+				<td class="sec" id="sx=47&sy=48" title="[G] Love's pity"></td>
+				<td class="sec" id="sx=48&sy=48" title="[G] Burton Riders"></td>
+				<td class="sec" id="sx=49&sy=48" title="[G] Yanks"></td>
+				<td class="sec" id="sx=50&sy=48" title="[G] Shametown"></td>
+				<td class="sec" id="sx=51&sy=48" title="[G] Bronhs"></td>
+				<td class="sec" id="sx=52&sy=48" title="[G] Rollers Point"></td>
+				<td class="sec" id="sx=53&sy=48" title="[G] Igel's Fort"></td>
+			</tr>
+			<tr>
+				<td class="sec" id="sx=47&sy=49" title="[G] Sheever place"></td>
+				<td class="sec" id="sx=48&sy=49" title="[G] Old Dublin"></td>
+				<td class="sec" id="sx=49&sy=49" title="[G] Middlemud"></td>
+				<td class="sec" id="sx=50&sy=49" title="[G] Katamza Hills"></td>
+				<td class="sec" id="sx=51&sy=49" title="[G] 13th District"></td>
+				<td class="sec" id="sx=52&sy=49" title="[G] Rastaman`s Quarters"></td>
+				<td class="sec" id="sx=53&sy=49" title="[G] Respect Hill"></td>
+			</tr>
+			<tr>
+				<td class="sec" id="sx=47&sy=50" title="[G] Cheaters nest"></td>
+				<td class="sec" id="sx=48&sy=50" title="[G] Heavy Fuel"></td>
+				<td class="sec" id="sx=49&sy=50" title="[G] West Side City"></td>
+				<td class="sec" id="sx=50&sy=50" title="[G] Ganja City Downtown"></td>
+				<td class="sec" id="sx=51&sy=50" title="[G] N.Y City"></td>
+				<td class="sec" id="sx=52&sy=50" title="[G] Green Parks"></td>
+				<td class="sec" id="sx=53&sy=50" title="[G] Shipping Bay"></td>
+			</tr>
+			<tr>
+				<td class="sec" id="sx=47&sy=51" title="[G] Local park"></td>
+				<td class="sec" id="sx=48&sy=51" title="[G] Riverside North"></td>
+				<td class="sec" id="sx=49&sy=51" title="[G] Shoreside Vale"></td>
+				<td class="sec" id="sx=50&sy=51" title="[G] Tishka & “иха€ Valley"></td>
+				<td class="sec" id="sx=51&sy=51" title="[G] China-Town"></td>
+				<td class="sec" id="sx=52&sy=51" title="[G] Extrim Hills"></td>
+				<td class="sec" id="sx=53&sy=51" title="[G] Alice heart"></td>
+			</tr>
+			<tr>
+				<td class="sec" id="sx=47&sy=52" title="[G] Red point"></td>
+				<td class="sec" id="sx=48&sy=52" title="[G] Ganjabase Southwest"></td>
+				<td class="sec" id="sx=49&sy=52" title="[G] The Wall Streets"></td>
+				<td class="sec" id="sx=50&sy=52" title="[G] Klamath"></td>
+				<td class="sec" id="sx=51&sy=52" title="[G] Vault 15"></td>
+				<td class="sec" id="sx=52&sy=52" title="[G] Hammerside"></td>
+				<td class="sec" id="sx=53&sy=52" title="[G] Black point"></td>
+			</tr>
+			<tr>
+				<td class="sec" id="sx=47&sy=53" title="[G] Lexus base"></td>
+				<td class="sec" id="sx=48&sy=53" title="[G] 47th street"></td>
+				<td class="sec" id="sx=49&sy=53" title="[G] Failure of perl"></td>
+				<td class="sec" id="sx=50&sy=53" title="[G] Death avenue"></td>
+				<td class="sec" id="sx=51&sy=53" title="[G] Lost sector"></td>
+				<td class="sec" id="sx=52&sy=53" title="[G] White Brooklyn"></td>
+				<td class="sec" id="sx=53&sy=53" title="[G] Black Brooklyn"></td>
+			</tr>
+		</table>
+		<table align="center">
+			<td style="width:430px;"><font style="text-decoration:none;color: #666666;font: 7pt sans-serif;">*Ѕары обновл€ютс€ не сразу</font></td>
+		</table>
+	</div>
+	</body>
+	<script type="text/javascript" src="parseb.js"></script>
+</html>
